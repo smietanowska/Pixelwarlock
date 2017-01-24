@@ -72,43 +72,84 @@
     font-style: normal;
 }
 
+/*Generic code*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.ground {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box {
+    width: 65%;
+    position: relative;
+    left: 290px;
+}
+.box_text {
+    font-family: 'open_sansregular';
+    color: white;
+    font-size: 20px;
+    line-height:2em;
+    padding: 10%;
+    border-right: 2px white solid;
+    letter-spacing: 2px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.bigger_font {
+    font-size: 30px;
+    font-weight: bold;
+}
+.box_two {
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.box_two_text {
+    font-family: 'open_sansregular';
+    color: white;
+    font-size: 20px;
+    line-height:2em;
+    padding: 10%;
+    letter-spacing: 3px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+
+/*VIDEO SECTION*/
+
 
 .videoWrapper {
     position: absolute;
     top: 0;
     left: 0;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
+    padding-bottom: 56.25%;  16:9 
+    height: 0;
     width: 100%;
     overflow: hidden;
 }
-
 .videoWrapper video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
 .intro {
     background-color: white;
     height: 100vh;
     width: 100%;
     position: relative;
 }
-
 .logo {
     position: absolute;
     left: 45%;
     top: 35%;
-}
-
+    }
 .logo p {
     font-family: 'open_sanssemibold';
     font-size: 29px;
@@ -116,7 +157,6 @@
     position: relative;
     border-bottom: 2px white solid;
 }
-
 .scroll_desc {
     font-family: 'open_sansregular';
     font-size: 15px;
@@ -125,41 +165,33 @@
     left: 46%;
     top: 90%;
 }
+#left1 {
+    background-color: transparent;
+}
+#right1 {
+    background-color: transparent;
+}
 
-
-/*test*/
-.two {
-    background-color: red;
-    height: 100vh;
-} 
+/*NAVIGATION*/
 
 .ms-section{
     text-align: center;
-		}
-
-#menu li {
-    display:inline-block;
-    margin: 10px;
-    color: #000;
-    background:#fff;
-    background: rgba(255,255,255, 0.3);
-    -webkit-border-radius: 10px; 
-    border-radius: 10px; 
+    min-height: 100%;
 }
-#menu li.active{
-    background:#666;
-    background: rgba(255,255,255, 1);
-    color: #000;
+#menu li {
+    display: block;
+    margin: 0px;
+    letter-spacing: 5px;
+    width: 230px;
 }
 #menu li a{
     text-decoration:none;
-    color: #000;
+    color: #a6a6a6;
+    font-family: 'open_sanssemibold';
+    font-size: 15px;
 }
-#menu li.active a:hover{
-    color: #000;
-}
-#menu li:hover{
-    background: rgba(255,255,255, 0.8);
+#menu li a:hover{
+    color: white;
 }
 #menu li a,
 #menu li.active a{
@@ -167,7 +199,7 @@
     display:block;
 }
 #menu li.active a{
-    color: #000;
+    color: white;
 }
 #menu{
     position:fixed;
@@ -178,4 +210,205 @@
     width: 100%;
     padding: 0;
     margin:0;
+}
+
+/*ABOUT US*/
+
+#left2 {
+    background-image: url("../images/aboutu_left.jpg");
+}
+#right2 {
+    background-image: url("../images/aboutu_right.jpg");
+}
+
+.container_text {
+    font-size: 20px;
+    font-family: 'open_sansregular';
+    color: white;
+    letter-spacing: 3px;
+    line-height: 2em;
+    padding: 10%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 85%;
+    height: 85%;
+}
+.tabs li{
+    display: inline-block;
+    margin:0;
+    padding: 10px 87px 5px 87px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    color: #a6a6a6;
+    font-size: 2em;
+    line-height:2em;
+}
+.tabs li:hover {
+    color: white;
+}
+.tabs li.current{
+    color: #FFF;
+}
+.tab-content{
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    line-height:1.4;
+    width: 85%;
+    height: 85%;
+}
+.tab-content.current{
+    display: inherit;
+}
+
+/*OUR PRODUCTS*/
+
+#left3 {
+    background-image: url("../images/products_left.jpg");
+}
+#right3 {
+    background-image: url("../images/products_right.jpg");
+}
+
+/*UI/UX*/
+
+#left4 {
+    background-color: rgb(52,59,78);
+}
+#right4 {
+    background-image: url("../images/ux.jpg");
+    background-color: rgb(52,59,78);
+}
+
+
+
+/*COPRYWRITING*/
+
+#left5 {
+    background-image: url("../images/copy_left.jpg");
+}
+#right5 {
+    background-image: url("../images/copy_right.jpg");
+}
+
+
+/*DESING*/
+
+#left6 {
+    background-image: url("../images/design_left.jpg");
+}
+#right6 {
+    background-image: url("../images/design_right.jpg");
+}
+
+
+/*DEVELOPMENT*/
+
+#left7 {
+    background-image: url("../images/dev_left.jpg");
+}
+#right7 {
+    background-image: url("../images/dev_right.jpg");
+}
+
+/*TESTING*/
+
+#left8 {
+    background-image: url("../images/test_left.jpg");
+}
+#right8 {
+    background-image: url("../images/test_right.jpg");
+}
+
+
+/*FORMULARZ*/
+
+#left9 {
+    background-image: url("../images/contact_left.jpg");
+}
+#right9 {
+    background-image: url("../images/contact_right.jpg");
+
+}
+form {
+    display: block;
+    height: 30%;
+    position: relative;
+    left: 300px;
+}
+.textfield {
+    display: block;
+    width: 600px;
+    height: 50px;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px white solid;
+}
+.textarea {
+    display: block;
+    width: 600px;
+    height: 350px;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px white solid;
+}
+::-webkit-input-placeholder {
+    color: #a6a6a6;
+    font-family: 'open_sansregular';
+    font-size: 20px;
+    padding: 2%;
+}
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'open_sansregular';
+    font-size: 20px;
+    color: white;
+    border: none;
+    left: 500px;
+    display: inline-block;
+}
+
+/*RWD*/
+
+@media (max-width:414px) and (orientation:portrait) {
+
+    .videoWrapper {
+        display: none;
+    }
+    .intro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        background-image: url("../images/mobile_sec1.JPG");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .logo {
+        position: absolute;
+        left: 22%;
+        top: 30%;
+        }
+    .logo p {
+        font-size: 0,5em;
+    }
+    .scroll_desc {
+        font-size: 13px;
+        position: absolute;
+        left: 30%;
+        top: 90%;
+    }
+    #menu li {
+        height: 50%;
+    }
+
 }
