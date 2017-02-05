@@ -401,209 +401,67 @@ form {
 
 /*MEDIA*/
 
-
-
-@media (max-width:1390px) {
+@media (max-width: 400px) {
     .videoWrapper {
         display: none;
     }
+    .logo {
+        transform: scale(0.4,0.4);
+        left: 15%;
+        top: 35%;
+    }
     .scroll_desc {
         top: 80%;
-        left: 40%;
+        left: 20%;
     }
-    #menu li {
-        height: 50%;
+    .hellobox {
+        display: none !important;
     }
-    .logo {
-        transform: scale(0.7,0.7);
-        left: 36%;
-        top: 32%;
-    }
-    .container_text {
-        font-size: 15px;
-    }
-    .bigger_font {
-        font-size: 20px;
-    }
-    .tabs li {
-        padding: 15px 15px 0px 18px;
-        font-size: 20px;
-        line-height:1em;
-    }
-    .tab-content{
-        width: 90%;
-        height: 70%;
-        background: rgba(0, 0, 0, 1);
-    }
-    .tabs {
-        width: 90%;
-        background-color: rgba(0, 0, 0, 1);
-    }
-    .box_two_text {
-        font-size: 12px;
-        border: none;
-        background: rgba(0, 0, 0, 1); 
-    }
-    .box_text {
-        font-size: 12px;
-        background: rgba(0, 0, 0, 1);
-        border: none;
-    }
-    #left4 {
-        background-color: black;
+    .box_two {
+        display: none !important;
     }
     .box {
-        left: 5%;
-        top: 5%;
-        width: 100%;
+        display: none !important;
     }
-    .textarea {
-        height: 300px;
-        width: 125%;
-        background-color: rgba(0, 0, 0, 1);
+    .box2 {
+        display: none !important;
     }
-    ::-webkit-input-placeholder {
-        font-size: 18px;
-        padding: 3%;
+    #menu li {
+        height: 40%;
     }
-    form {
-        background-color: black;
-        width: 100%;
-        left: 35%;
+    .mobile {
+        visibility: visible;
     }
-    .btn {
-        background-color: rgba(0, 0, 0, 0);
-        justify-content: center;
-        width: 125%;
+    .mobile2 {
+        visibility: visible;
     }
-    .textfield {
-        width: 125%;
-        background-color: rgba(0, 0, 0, 1);
+    #right4 {
+        background-size: cover;
     }
-    .lt3 {
-        font-size: 20px;
-        width: 125%;
-    } 
+    #left6 {
+        background-image: none;
+    }
+    #right6 {
+        background-size: cover;
+    }
+    #left6 {
+        background-image: none;
+    }
+    #right6 {
+        background-size: cover;
+    }
     #left9 {
         background-image: none;
-        background-color: black;
     }
     #right9 {
         background-image: none;
-        background-color: transparent;
-    }
-    .invisible {
-        visibility: visible;
-    }
-    .lt2 {
-        padding: 10%;
-        font-size: 50px;
-    }
-    .lt1 {
-        font-size: 30px;
-    }
-}
-
-
-@media (max-width:1025px) {
-    .scroll_desc {
-        top: 80%;
-        left: 45%;
-    }
-    #menu li {
-        height: 50%;
-    }
-    .logo {
-        transform: scale(0.7,0.7);
-        left: 43%;
-        top: 32%;
-    }
-    .container_text {
-        font-size: 15px;
-    }
-    .bigger_font {
-        font-size: 20px;
-    }
-    .tabs li {
-        padding: 15px 15px 0px 18px;
-        font-size: 20px;
-        line-height:1em;
-    }
-    .tab-content{
-<!--        width: 90%;-->
-        height: 70%;
-        background: rgba(0, 0, 0, 1);
-    }
-    .tabs {
-        width: 90%;
-        background-color: rgba(0, 0, 0, 1);
-    }
-    .box_two_text {
-        font-size: 12px;
-        border: none;
-        background: rgba(0, 0, 0, 1); 
-    }
-    .box_text {
-        font-size: 12px;
-        background: rgba(0, 0, 0, 1);
-    }
-    #left4 {
-        background-color: black;
-    }
-    .box {
-        left: 5%;
-        top: 5%;
-        width: 100%;
-    }
-    .textarea {
-        height: 300px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 1);
-    }
-    ::-webkit-input-placeholder {
-        font-size: 18px;
-        padding: 3%;
     }
     form {
-        background-color: black;
-        width: 125%;
-        left: 35%;
-    }
-    .btn {
-        background-color: rgba(0, 0, 0, 0);
-        justify-content: center;
-        width: 100%;
-    }
-    .textfield {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 1);
-    }
-    .lt1 {
-        font-size: 30px;
-    }
-    .lt3 {
-        font-size: 20px;
-        width: 100%;
-        padding: 0;
-        background-color: black;
-    } 
-    #left9 {
-        background-image: none;
-        background-color: transparent;
-    }
-    #right9 {
-        background-image: none;
-        background-color: transparent;
-    }
-    .invisible {
-        visibility: visible;
-    }
-    .lt2 {
-        padding: 10%;
-        font-size: 50px;
+        display: none;
     }
 }
-@media (max-width:700px) {
+
+@media (min-width:401px) and (max-width:700px) {
     .videoWrapper {
         display: none;
     }
@@ -715,62 +573,202 @@ form {
         width: 125%;
     } 
 }
-@media (max-width:350px) {
-    .videoWrapper {
-        display: none;
-    }
-    .logo {
-        transform: scale(0.4,0.4);
-        left: 15%;
-        top: 35%;
-    }
+@media (min-width:701px) and (max-width:1025px) {
     .scroll_desc {
         top: 80%;
-        left: 20%;
-    }
-    .hellobox {
-        display: none !important;
-    }
-    .box_two {
-        display: none !important;
-    }
-    .box {
-        display: none !important;
-    }
-    .box2 {
-        display: none !important;
+        left: 45%;
     }
     #menu li {
-        height: 40%;
+        height: 50%;
     }
-    .mobile {
-        visibility: visible;
+    .logo {
+        transform: scale(0.7,0.7);
+        left: 43%;
+        top: 32%;
     }
-    .mobile2 {
-        visibility: visible;
+    .container_text {
+        font-size: 15px;
     }
-    #right4 {
-        background-size: cover;
+    .bigger_font {
+        font-size: 20px;
     }
-    #left6 {
-        background-image: none;
+    .tabs li {
+        padding: 15px 15px 0px 18px;
+        font-size: 20px;
+        line-height:1em;
     }
-    #right6 {
-        background-size: cover;
+    .tab-content{
+<!--        width: 90%;-->
+        height: 70%;
+        background: rgba(0, 0, 0, 1);
     }
-    #left6 {
-        background-image: none;
+    .tabs {
+        width: 85%;
+        background-color: rgba(0, 0, 0, 1);
     }
-    #right6 {
-        background-size: cover;
+    .box_two_text {
+        font-size: 12px;
+        border: none;
+        background: rgba(0, 0, 0, 1); 
     }
+    .box_text {
+        font-size: 12px;
+        background: rgba(0, 0, 0, 1);
+    }
+    #left4 {
+        background-color: black;
+    }
+    .box {
+        left: 5%;
+        top: 5%;
+        width: 100%;
+    }
+    .textarea {
+        height: 300px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    ::-webkit-input-placeholder {
+        font-size: 18px;
+        padding: 3%;
+    }
+    form {
+        background-color: black;
+        width: 125%;
+        left: 35%;
+    }
+    .btn {
+        background-color: rgba(0, 0, 0, 0);
+        justify-content: center;
+        width: 100%;
+    }
+    .textfield {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .lt1 {
+        font-size: 30px;
+    }
+    .lt3 {
+        font-size: 20px;
+        width: 100%;
+        padding: 0;
+        background-color: black;
+    } 
     #left9 {
         background-image: none;
+        background-color: transparent;
     }
     #right9 {
         background-image: none;
+        background-color: transparent;
+    }
+    .invisible {
+        visibility: visible;
+    }
+    .lt2 {
+        padding: 10%;
+        font-size: 50px;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1390px) {
+    .videoWrapper {
+        display: none;
+    }
+    .scroll_desc {
+        top: 80%;
+        left: 40%;
+    }
+    #menu li {
+        height: 50%;
+    }
+    .logo {
+        transform: scale(0.7,0.7);
+        left: 36%;
+        top: 32%;
+    }
+    .container_text {
+        font-size: 15px;
+    }
+    .bigger_font {
+        font-size: 20px;
+    }
+    .tabs li {
+        padding: 15px 15px 0px 18px;
+        font-size: 20px;
+        line-height:1em;
+    }
+    .tab-content{
+        width: 90%;
+        height: 70%;
+        background: rgba(0, 0, 0, 1);
+    }
+    .tabs {
+        width: 90%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .box_two_text {
+        font-size: 12px;
+        border: none;
+        background: rgba(0, 0, 0, 1); 
+    }
+    .box_text {
+        font-size: 12px;
+        background: rgba(0, 0, 0, 1);
+        border: none;
+    }
+    #left4 {
+        background-color: black;
+    }
+    .box {
+        left: 5%;
+        top: 5%;
+        width: 100%;
+    }
+    .textarea {
+        height: 200px;
+        width: 125%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    ::-webkit-input-placeholder {
+        font-size: 18px;
+        padding: 3%;
     }
     form {
-        display: none;
+        background-color: black;
+        width: 100%;
+        left: 35%;
+    }
+    .btn {
+        background-color: rgba(0, 0, 0, 0);
+        justify-content: center;
+        width: 125%;
+    }
+    .textfield {
+        width: 125%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .lt3 {
+        font-size: 20px;
+        width: 125%;
+    } 
+    #left9 {
+        background-image: none;
+        background-color: black;
+    }
+    #right9 {
+        background-image: none;
+        background-color: transparent;
+    }
+    .invisible {
+        visibility: visible;
+    }
+    .lt2 {
+        padding: 10%;
+        font-size: 50px;
+    }
+    .lt1 {
+        font-size: 30px;
     }
 }
