@@ -673,19 +673,17 @@ form {
 }
 
 @media (min-width:1026px) and (max-width:1390px) {
-    .videoWrapper {
-        display: none;
-    }
+
     .scroll_desc {
-        top: 80%;
-        left: 40%;
+        top: 85%;
+        left: 46%;
     }
     #menu li {
         height: 50%;
     }
     .logo {
         transform: scale(0.7,0.7);
-        left: 36%;
+        left: 44%;
         top: 32%;
     }
     .container_text {
